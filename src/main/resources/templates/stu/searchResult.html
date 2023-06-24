@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>searchList</title>
+</head>
+<body>
+<h1>[[${stuClass}]]반을 초과하는 학생 목록</h1>
+<table>
+    <tr>
+        <th>학생번호</th>
+        <th>학생이름</th>
+        <th>학생성별</th>
+        <th>학생반</th>
+        <th>학생주소</th>
+    </tr>
+    <tr th:each="stu : ${ stuList }">
+        <td th:text="${ stu.stuCode }"></td>
+        <td th:text="${ stu.stuName }"></td>
+        <td th:text="${ stu.stuGender }"></td>
+        <td th:text="${ stu.stuClass }"></td>
+        <td th:text="${ stu.stuAddress }"></td>
+    </tr>
+</table>
+</body>
+</html>

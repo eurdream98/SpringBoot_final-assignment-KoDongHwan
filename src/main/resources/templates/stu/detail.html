@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>detail</title>
+</head>
+<body>
+<table>
+    <tr>
+        <th>번호</th>
+        <th>이름</th>
+        <th>성별</th>
+        <th>반</th>
+        <th>주소</th>
+    </tr>
+    <tr>
+        <td th:text="${stu.stuCode}"></td>
+        <td th:text="${stu.stuName}"></td>
+        <td th:text="${stu.stuGender}"></td>
+        <td th:text="${stu.stuClass}"></td>
+        <td th:text="${stu.stuAddress}"></td>
+    </tr>
+</table>
+</body>
+</html>
